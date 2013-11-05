@@ -315,7 +315,8 @@ class FormElement extends ZendFormElement
 
         if ($element instanceof \Zend\Form\Element\Text
             || $element instanceof \Zend\Form\Element\Password
-            || $element instanceof \Zend\Form\Element\Textarea) {
+            || $element instanceof \Zend\Form\Element\Textarea
+            || $element instanceof \Zend\Form\Element\Select) {
             $element->setAttribute('class', $element->getAttribute('class').' form-control');
         }
 

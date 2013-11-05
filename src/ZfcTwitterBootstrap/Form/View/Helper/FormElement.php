@@ -327,7 +327,7 @@ class FormElement extends ZendFormElement
             $elementErrorHelper->render($element)
         );
 
-        $addtClass = ($element->getMessages()) ? ' error' : '';
+        $addtClass = ($element->getMessages()) ? ' has-error' : '';
 
         return sprintf($groupWrapper, $addtClass, $id, $html);
     }

@@ -49,7 +49,7 @@ class FormElement extends ZendFormElement
     /**
      * @var string
      */
-    protected $controlWrapper = '<div class="controls" id="controls-%s">%s%s%s</div>';
+    protected $controlWrapper = '%s%s%s';
 
     /**
      * Set Label Helper
@@ -326,8 +326,8 @@ class FormElement extends ZendFormElement
             $controls = $elementHelper->render($element);
         }
 
-        $html = $hiddenElementForCheckbox . $controlLabel . sprintf($controlWrapper,
-            $id,
+        $html = $hiddenElementForCheckbox . $controlLabel . sprintf(
+            $controlWrapper,
             $controls,
             $descriptionHelper->render($element),
             $elementErrorHelper->render($element)

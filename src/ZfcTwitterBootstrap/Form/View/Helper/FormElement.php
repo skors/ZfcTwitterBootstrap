@@ -44,7 +44,7 @@ class FormElement extends ZendFormElement
     /**
      * @var string
      */
-    protected $groupWrapper = '<div class="control-group%s" id="control-group-%s">%s</div>';
+    protected $groupWrapper = '<div class="form-group%s" id="control-group-%s">%s</div>';
 
     /**
      * @var string

@@ -313,6 +313,12 @@ class FormElement extends ZendFormElement
 
         $controls = '';
 
+        if ($element instanceof \Zend\Form\Element\Text
+            || $element instanceof \Zend\Form\Element\Password
+            || $element instanceof \Zend\Form\Element\Textarea) {
+            $element->setAttribute('class', $element->getAttribute('class').' form-control');
+        }
+
         if ($element->getOption('wrapCheckboxInLabel')) {
             $controls = $controlLabel;
             $controlLabel = '';

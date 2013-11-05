@@ -1,21 +1,16 @@
 {
-    "name": "skors/zfc-twitter-bootstrap",
+    "name": "mwillbanks/zfc-twitter-bootstrap",
     "description": "A module that assists in implementing Twitter Bootstrap for ZF2",
     "type": "library",
     "keywords": [
         "zf2", "twBootstrap", "Twitter Bootstrap"
     ],
-    "homepage": "https://github.com/skors/ZfcTwitterBootstrap",
+    "homepage": "https://github.com/mwillbanks/ZfcTwitterBootstrap",
     "authors": [
         {
             "name": "Mike Willbanks",
             "email": "mike@digitalstruct.com",
             "homepage": "http://blog.digitalstruct.com/"
-        },
-        {
-            "name": "Sebastian Kors",
-            "email": "skors@unicosoft.de",
-            "homepage": "http://unicosoft.de/"
         }
     ],
     "require": {

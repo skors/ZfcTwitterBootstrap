@@ -201,7 +201,7 @@ class Menu extends ZendMenu
                 $liClasses[] = 'active';
             }
             // Is page parent?
-            if ($page->hasChildren() && (!isset($maxDepth) || $depth < $maxDepth)) {
+            if ($page->hasChildren() && $page->findAllBy('visible', 1) != null && (!isset($maxDepth) || $depth < $maxDepth)) {
                 $liClasses[] = 'dropdown';
                 $page->isDropdown = true;
             }

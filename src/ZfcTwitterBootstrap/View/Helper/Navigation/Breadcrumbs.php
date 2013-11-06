@@ -42,6 +42,10 @@ class Breadcrumbs extends ZendBreadcrumbs
         }
         $html .= '>';
 
+        if (!empty($page->get('iconClass'))) {
+            $html .= '<span class="'.$page->get('iconClass').'"></span> ';
+        }
+
         $label = $page->getLabel();
         if (null !== ($translator = $this->getTranslator())) {
             $label = $translator->translate($label, $this->getTranslatorTextDomain());

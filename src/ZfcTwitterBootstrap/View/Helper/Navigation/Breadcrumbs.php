@@ -60,7 +60,7 @@ class Breadcrumbs extends ZendBreadcrumbs
             $html .= $label;
         }
 
-        if ($hasParent) {
+        if ($hasParent && $this->getSeparator() != '') {
             $html .= '<span class="divider">' . $this->getSeparator() . '</span>';
         }
         $html .= '</li>';

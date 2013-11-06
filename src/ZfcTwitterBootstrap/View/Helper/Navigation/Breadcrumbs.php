@@ -105,7 +105,7 @@ class Breadcrumbs extends ZendBreadcrumbs
             $active = $parent;
         }
 
-        $html = '<ul class="breadcrumb">' . $html . '</ul>';
+        $html = '<ol class="breadcrumb">' . $html . '</ol>';
 
         return strlen($html) ? $this->getIndent() . $html : '';
     }
